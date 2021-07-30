@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f9f5f5;
+}
+ @font-face{
+    font-family: metropolis;
+    src: url(Metropolis-ExtraBold.otf);
+
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 0 0;
+    font-family:metropolis;
+    text-align: center;
+}
+.paragraph{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+    font-size: 16px;
+    text-align: center;
+}
+.flex-box{
+    display: flex;
+    justify-content: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 50px;
+    margin: 100px;
+}
+.gradient{
+    width: 260px;
+    height: 230px;
+    border-radius: 25px;
+}
+.download-btn{
+    width: 30px;
+    margin: 10px 0 0 217px;
+    position: absolute;
+    background: none;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 15px 0;
+}
+
+@media (max-width:950px){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:650px){
+    .grid{
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+    .paragraph{
+        font-size: 28px;
+    }
+}
